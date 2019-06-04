@@ -98,7 +98,6 @@ namespace Banana.UI.Popup
                 // Overlap is blocked..
                 if (showingPopupStack.Contains(newPopupName))
                 {
-                    Debug.Log("OVER LAP~");
                     return;
                 }
 
@@ -163,7 +162,6 @@ namespace Banana.UI.Popup
 
         private IEnumerator ShowPopupRoutine(string showingPopupName)
         {
-            Debug.Log("SHOW POPUP ROUTINE~:" + showingPopupName);
             IsTransition = true;
 
             var popup = PopupDic[showingPopupName];
